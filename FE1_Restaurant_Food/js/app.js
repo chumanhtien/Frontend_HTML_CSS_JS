@@ -10,8 +10,8 @@ menu.addEventListener('click', () => {
 })
 
 window.onscroll = () => {
-    menu.classList.toggle('fa-times')
-    navbar.classList.toggle('active')
+    menu.classList.remove('fa-times')
+    navbar.classList.remove('active')
 }
 
 searchIcon.addEventListener('click', function () {
@@ -20,4 +20,22 @@ searchIcon.addEventListener('click', function () {
 
 closeSearchForm.addEventListener('click', function () {
     searchForm.classList.remove('active')
+})
+
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 120,
+    centeredSlides: true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    loop: true,
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
 })
