@@ -11,6 +11,13 @@ menu.addEventListener('click', () => {
 
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a')
+let onClickNavLink = true
+
+navLinks.forEach((navLinkItem) => {
+    navLinkItem.addEventListener('onclick', function() {
+        onClickNavLink = false
+    }) 
+})
 
 window.onscroll = () => {
     menu.classList.remove('fa-times')
@@ -22,11 +29,13 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 150
         let id = sec.getAttribute('id')
 
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach((links) => {
-                links.classList.remove('active')
-                document.querySelector('header .navbar a[href*='+id+']').classList.add('active')
-            })
+        if (onClickNavLink) {
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach((links) => {
+                    links.classList.remove('active')
+                    document.querySelector('header .navbar a[href*='+id+']').classList.add('active')
+                })
+            }
         }
     })
 }
@@ -77,3 +86,14 @@ var swiper2 = new Swiper(".review-slider", {
         },
     }
 })
+
+function loading() {
+    let loaderContainer = document.querySelector('.loader-container')
+    loaderContainer.classList.add('fade-out');
+}
+
+function fadeOut() {
+    setInterval(loading, 3000)
+}
+
+window.addEventListener('load',  fadeOut)

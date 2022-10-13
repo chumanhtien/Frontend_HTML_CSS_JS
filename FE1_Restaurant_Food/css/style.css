@@ -64,6 +64,7 @@ section:nth-child(even) {
     letter-spacing: 0.1rem;
 }
 
+/* header section*/
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -124,6 +125,7 @@ header .icons #menu-bars {
     display: none;
 }
 
+/* search */
 #search-form {
     position: fixed;
     top: -110%; left: 0;
@@ -172,6 +174,7 @@ header .icons #menu-bars {
     font-size: 4rem;
 }
 
+/* home section */
 .home .home-slider {
     overflow: hidden;
 }
@@ -217,6 +220,7 @@ header .icons #menu-bars {
     background: var(--green);
 }
 
+/* dishes section */
 .dishes .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -295,6 +299,7 @@ header .icons #menu-bars {
     font-size: 2.5rem;
 }
 
+/* about us section */
 .about .row {
     display: flex;
     flex-wrap: wrap;
@@ -358,6 +363,8 @@ header .icons #menu-bars {
     color: var(--black);
 }
 
+
+/* menu section */
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -438,11 +445,8 @@ header .icons #menu-bars {
     margin-left: 1rem;
     font-size: 2.5rem;
 }
-/* 
-.review {
-    height: 100vh;
-} */
 
+/* review section */
 .review-slider {
     overflow: hidden;
 }
@@ -496,6 +500,7 @@ header .icons #menu-bars {
     color: var(--light-color);
 }
 
+/* order section */
 .order form {
     max-width: 90rem;
     border-radius: 0.5rem;
@@ -549,6 +554,7 @@ header .icons #menu-bars {
     margin-top: 0;
 }
 
+/* footer */
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -592,7 +598,31 @@ header .icons #menu-bars {
     color: var(--green);
 }
 
-/* media queries */
+
+/* loader */
+.loader-container {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader-container img {
+    width: 35rem;
+}
+
+.fade-out {
+    top: 110%;
+    opacity: 0;
+}
+
+/* media queries for responsive*/
 @media (max-width: 991px) {
     html {
         font-size: 55%;
