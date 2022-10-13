@@ -172,6 +172,9 @@ header .icons #menu-bars {
     font-size: 4rem;
 }
 
+.home .home-slider {
+    overflow: hidden;
+}
 
 .home .home-slider .slide {
     display: flex;
@@ -381,6 +384,7 @@ header .icons #menu-bars {
     height: 100%;
     border-radius: 0.5rem;
     object-fit: cover;
+    object-position: center;
 }
 
 .menu .box-container .box .image .fa-heart {
@@ -433,6 +437,63 @@ header .icons #menu-bars {
     color: var(--green);
     margin-left: 1rem;
     font-size: 2.5rem;
+}
+
+.review {
+    height: 100vh;
+}
+
+.review-slider {
+    overflow: hidden;
+}
+
+.review .slide {
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    position: relative;
+    margin-top: 2.8rem;
+}
+
+.review .slide .fa-quote-right {
+    position: absolute;
+    top: 2rem; right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
+
+.review .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.review .slide .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.review .slide .user h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+
+}
+
+.review .slide .user i {
+    font-size: 1.3rem;
+    color: var(--green);
+}
+
+.review .slide p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--light-color);
 }
 
 /* media queries */
