@@ -598,8 +598,6 @@ header .icons #menu-bars {
     color: var(--green);
 }
 
-
-/* loader */
 .loader-container {
     position: fixed;
     top: 0; left: 0;
@@ -622,7 +620,7 @@ header .icons #menu-bars {
     opacity: 0;
 }
 
-/* media queries for responsive*/
+/* media queries */
 @media (max-width: 991px) {
     html {
         font-size: 55%;
