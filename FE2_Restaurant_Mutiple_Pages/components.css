@@ -37,6 +37,7 @@
 
     .nav__icon {
         display: block;
+        cursor: pointer;
     }
 
     .nav__icon svg,
@@ -124,5 +125,128 @@
     .btn {
         padding: 1.3rem 2rem;
         font-size: 2rem;
+    }
+}
+
+
+/* Footer styles*/
+footer {
+    background: var(--lightGreen-1);
+    padding: 5rem;
+    padding-bottom: 2rem;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer__logo {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+.footer__desc {
+    font-size: 1.4rem;
+    color: var(--black-2);
+    margin-bottom: 2rem;
+}
+
+.footer__socials__title {
+    font-size: 1.8rem;
+    color: var(--black-2);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.footer__socials li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.footer__socials a {
+    padding: 0.5rem 0.8rem;
+    background-color: var(--white-1);
+    border: 1px solid var(--green-2);
+    border-radius: 8px;
+}
+
+.footer__socials svg {
+    width: 20px;
+    color: var(--black-2);
+}
+
+.footer__text__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--black-1);
+    font-weight: 600;
+}
+
+.footer__text a {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--black-2);
+    font-family: 'Raleway';
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .footer__wrapper {
+        flex-direction: row;
+    }
+
+    .footer__col1 {
+        flex: 4;
+    }
+
+    .footer__col2, 
+    .footer__col3, 
+    .footer__col4 {
+        flex: 2;
+    }
+
+    .footer__desc {
+        max-width: 300px;
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer__socials__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer__text a {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.copyright {
+    padding: 1rem 0;
+}
+
+.copyright__text {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.copyright__text a {
+    font-weight: 500;
+    color: var(--green-1)
+}
+
+@media only screen and (min-width: 768px) {
+    .copyright__text {
+        font-size: 1.6rem;
+        text-align: left;
     }
 }
