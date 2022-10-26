@@ -404,6 +404,7 @@ footer {
 .form__title {
     font-size: 1.8rem;
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 
 .form__group label {
@@ -476,7 +477,7 @@ footer {
     .form__group textarea,
     .form__group select {
         font-size: 1.8rem;
-        padding: 2rem;
+        padding: 1.5rem;
         margin-top: 1.2rem;
     }
 }

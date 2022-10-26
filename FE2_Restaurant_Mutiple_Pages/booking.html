@@ -17,7 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- aos css: scroll animated -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -65,6 +65,66 @@
     </div>
     <!-- End Nav Section -->
 
+
+    <!-- Booking Section -->
+    <section id="booking_form" class="booking_form" data-aos="fade-up">
+        <div class="container">
+            <h3 class="form__title">Book Table</h3>
+            <div class="form__wrapper">
+                <form class="form">
+                    <div class="form__group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="first_name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="last_name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="table">Table Type</label>
+                        <select id="tableType" name="table_type">
+                            <option selected disabled>Choose Table Type...</option>
+                            <option value="small">Small (2 person)</option>
+                            <option value="medium">Medium (4 person)</option>
+                            <option value="large">Large (6 person)</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="guestNumber">Quest Number</label>
+                        <input type="number" id="guestNumber" name="guest_number" min="1" max="10" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="placement">Placement</label>
+                        <select id="tableType" name="placement">
+                            <option selected disabled>Choose Placement...</option>
+                            <option value="outdoor">Outdoor</option>
+                            <option value="indoor">Indoor</option>
+                            <option value="rooftop">Rooftop</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form__group form__group__full">
+                        <label for="note">Note</label>
+                        <textarea name="note" id="note" rows="4" required></textarea>
+                    </div>
+                    <!-- <button>Sens</button> -->
+                    <button type="submit" class="btn primary-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Booking Section -->
 
     <!-- Footer -->
     <footer>
@@ -184,7 +244,7 @@
 
 
     <!-- aos script -->
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- custome script -->
     <script src="main.js"></script>

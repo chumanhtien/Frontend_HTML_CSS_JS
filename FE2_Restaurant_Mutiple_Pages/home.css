@@ -580,6 +580,7 @@
     text-align: center;
     text-transform: capitalize;
     color: var(--black-1);
+    font-weight: 500;
 }
 
 .testimonial__items__wrapper {
